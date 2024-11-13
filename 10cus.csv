@@ -1,0 +1,18 @@
+CustomerID,Age,Gender,MaritalStatus,Occupation,IncomeLevel,CreditLimit,CreditScore,CardType,YearsWithBank,NumberOfCreditCards,AverageMonthlySpending,LatePayments,CreditCardUsage,MobileBankingUsage,CustomerSatisfactionRating
+CUST0001,44,Male,Widowed,Private Sector Employee,54278,11254,645,Gold,6,2,4951,3,0.44,Yes,1
+CUST0002,40,Female,Single,Government Employee,61471,5371,505,Silver,10,2,4619,6,0.86,No,2
+CUST0003,43,Male,Single,Private Sector Employee,80036,5708,341,Silver,2,2,4052,6,0.71,Yes,2
+CUST0004,21,Male,Divorced,Student,2431,4642,721,Gold,2,2,696,0,0.15,Yes,2
+CUST0005,41,Female,Widowed,Government Employee,51298,7360,520,Silver,9,1,5814,8,0.79,Yes,3
+CUST0006,32,Male,Single,Government Employee,27175,12556,602,Gold,20,2,7031,3,0.56,Yes,4
+CUST0007,52,Female,Widowed,Government Employee,37335,17893,565,Silver,11,2,10735,3,0.6,Yes,1
+CUST0008,19,Male,Single,Student,1722,3527,644,Gold,3,2,1163,2,0.33,Yes,2
+CUST0009,42,Female,Divorced,Business Owner,115399,36749,807,Diamond,14,2,13229,1,0.36,Yes,5
+CUST0010,40,Female,Married,Executive,86677,20962,303,Silver,4,4,13834,9,0.66,No,4
+CUST0011,21,Male,Widowed,Student,2722,1197,464,Silver,1,2,813,7,0.68,Yes,3
+CUST0012,34,Female,Single,Government Employee,26891,5007,804,Gold,14,1,2403,0,0.48,No,2
+CUST0013,47,Female,Married,Government Employee,32205,11090,516,Silver,1,1,5877,4,0.53,Yes,1
+CUST0014,51,Male,Divorced,Government Employee,61646,18497,408,Silver,17,4,15167,4,0.82,Yes,2
+CUST0015,57,Male,Widowed,Executive,81048,74151,759,Diamond,15,1,25952,0,0.35,Yes,1
+CUST0016,49,Female,Single,Executive,236621,20028,675,Platinum,18,1,10014,2,0.5,Yes,3
+CUST0017,60,Female,Widowed,Business Owner,121684,45194,704,Platinum,17,3,17173,0,0.38,Yes,5

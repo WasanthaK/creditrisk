@@ -1,0 +1,101 @@
+CustomerID,FirstName,LastName,Gender,Age,MaritalStatus,Occupation,IncomeLevel,EducationLevel,Location,CreditLimit,CreditScore,CardType,YearsWithBank,NumberOfCreditCards,AverageMonthlySpending,LatePayments,CreditCardUsage,OnlinePurchaseFrequency,MobileBankingUsage,LastTransactionDate,CustomerSatisfactionRating,LoyaltyProgramMember,FraudAlert
+1001,John,Doe,Male,34,Married,Software Engineer,80000,Bachelor's,New York,15000,720,Rewards,5,2,1200,0,Moderate,Weekly,Daily,2023-10-15,4.5,Yes,No
+1002,Jane,Smith,Female,29,Single,Graphic Designer,65000,Bachelor's,San Francisco,10000,680,Cashback,3,1,800,1,High,Daily,Weekly,2023-10-10,4.0,Yes,No
+1003,Michael,Brown,Male,45,Married,Project Manager,95000,Master's,Chicago,20000,750,Travel,7,3,1500,0,Moderate,Monthly,Monthly,2023-10-12,4.8,Yes,Yes
+1004,Linda,Johnson,Female,38,Divorced,Teacher,55000,Bachelor's,Houston,12000,640,Standard,2,2,600,2,Low,Weekly,Daily,2023-10-05,3.5,No,No
+1005,David,Williams,Male,50,Widowed,Accountant,70000,Master's,Los Angeles,18000,710,Rewards,10,4,1000,1,Moderate,Monthly,Weekly,2023-10-08,4.2,Yes,No
+1006,Emily,Jones,Female,26,Single,Marketing Specialist,60000,Bachelor's,Seattle,9000,670,Cashback,1,1,400,0,High,Daily,Daily,2023-10-14,4.1,No,No
+1007,Chris,Miller,Male,31,Married,Data Analyst,72000,Bachelor's,Miami,11000,690,Standard,4,2,900,0,Moderate,Weekly,Monthly,2023-10-11,4.6,Yes,Yes
+1008,Sarah,Davis,Female,42,Married,Nurse,80000,Bachelor's,Phoenix,14000,730,Travel,6,3,1300,1,Low,Monthly,Weekly,2023-10-09,4.4,Yes,No
+1009,James,Garcia,Male,37,Single,Sales Representative,56000,Bachelor's,Atlanta,9500,660,Cashback,3,1,500,2,High,Daily,Daily,2023-10-13,3.8,No,No
+1010,Amy,Rodriguez,Female,28,Married,Web Developer,75000,Master's,Philadelphia,13000,700,Rewards,5,2,1100,0,Moderate,Weekly,Daily,2023-10-07,4.3,Yes,Yes
+1001,John,Doe,Male,34,Married,Software Engineer,75000,Bachelor's,New York,15000,720,Gold,5,2,800,1,High,Weekly,Daily,2023-10-01,4.5,Yes,No
+1002,Jane,Smith,Female,28,Single,Marketing Specialist,60000,Master's,San Francisco,10000,690,Silver,3,1,500,0,Medium,Monthly,Weekly,2023-10-05,4.0,Yes,No
+1003,Emily,Jones,Female,42,Married,Accountant,85000,Bachelor's,Chicago,20000,780,Platinum,10,3,1200,2,High,Weekly,Daily,2023-09-28,4.8,Yes,Yes
+1004,Michael,Brown,Male,30,Single,Sales Associate,45000,Bachelor's,Los Angeles,8000,650,Bronze,2,1,300,0,Low,Monthly,Monthly,2023-10-03,3.5,No,No
+1005,Olivia,Johnson,Female,37,Married,Teacher,55000,Bachelor's,Houston,12000,710,Silver,6,2,700,1,Medium,Weekly,Weekly,2023-09-30,4.2,Yes,No
+1006,James,Williams,Male,50,Divorced,Project Manager,95000,Master's,Miami,22000,800,Platinum,15,4,1500,0,High,Daily,Daily,2023-10-02,4.7,Yes,Yes
+1007,Sophia,Brown,Female,29,Single,Graphic Designer,48000,Bachelor's,Seattle,9000,680,Silver,4,2,400,1,Medium,Monthly,Weekly,2023-10-04,3.8,No,No
+1008,David,Miller,Male,45,Married,Doctor,120000,Doctorate,Atlanta,30000,790,Gold,12,5,2000,0,High,Daily,Daily,2023-09-29,4.9,Yes,Yes
+1009,Isabella,Davis,Female,33,Single,Data Analyst,70000,Master's,Boston,11000,730,Gold,5,2,600,0,Medium,Weekly,Monthly,2023-10-06,4.3,Yes,No
+1010,William,Garcia,Male,38,Married,Construction Manager,85000,Bachelor's,Phoenix,15000,765,Platinum,8,3,900,1,High,Weekly,Daily,2023-10-01,4.6,Yes,Yes
+C001,Emily,Johnson,Female,34,Married,Marketing Manager,75000,Bachelor's,New York,15000,720,Gold,5,2,600,1,Regular,Weekly,Yes,2023-10-15,8,LoyaltyPlus,No
+C002,Michael,Smith,Male,42,Single,Software Engineer,95000,Master's,San Francisco,20000,750,Platinum,8,3,800,0,Frequent,Monthly,Yes,2023-10-10,9,LoyaltyPlus,No
+C003,Sarah,Brown,Female,29,Married,Graphic Designer,65000,Bachelor's,Chicago,12000,680,Silver,3,1,400,2,Occasional,Weekly,No,2023-10-12,7,Standard,Yes
+C004,David,Williams,Male,55,Divorced,Financial Analyst,120000,Master's,Los Angeles,30000,800,Platinum,10,4,1000,0,Frequent,Daily,Yes,2023-10-08,10,LoyaltyPlus,No
+C005,Ashley,Jones,Female,26,Single,Customer Service Rep,45000,Associate's,Houston,10000,640,Bronze,2,1,350,3,Rarely,Monthly,No,2023-10-14,6,Standard,Yes
+C006,James,Garcia,Male,39,Married,Project Manager,85000,Bachelor's,Miami,18000,730,Gold,6,2,750,1,Regular,Weekly,Yes,2023-10-11,8,LoyaltyPlus,No
+C007,Jessica,Martinez,Female,31,Married,HR Specialist,70000,Bachelor's,Seattle,11000,690,Silver,4,2,500,2,Occasional,Monthly,No,2023-10-09,7,Standard,Yes
+C008,Daniel,Robinson,Male,47,Married,Sales Executive,95000,Master's,Atlanta,22000,760,Platinum,7,3,900,0,Frequent,Daily,Yes,2023-10-05,9,LoyaltyPlus,No
+C009,Olivia,Clark,Female,38,Single,Data Scientist,80000,Master's,Denver,17000,740,Gold,5,3,650,1,Regular,Weekly,Yes,2023-10-13,8,LoyaltyPlus,No
+C010,William,Hall,Male,29,Single,Web Developer,55000,Bachelor's,Boston,13000,670,Silver,3,1,300,2,Rarely,Monthly,No,2023-10-06,6,Standard,Yes
+C001,John,Doe,Male,35,Married,Software Engineer,85000,Bachelor's,New York,15000,720,Gold,5,2,500,0,High,Weekly,Daily,2023-10-15,4.5,Yes,No
+C002,Jane,Smith,Female,28,Single,Marketing Manager,65000,Master's,Los Angeles,12000,680,Silver,3,1,300,1,Medium,Monthly,Weekly,2023-10-10,4.0,Yes,No
+C003,Bob,Johnson,Male,42,Divorced,Accountant,90000,Bachelor's,Chicago,20000,750,Platinum,10,3,800,0,High,Weekly,Daily,2023-10-12,5.0,No,No
+C004,Alice,Williams,Female,30,Married,Graphic Designer,55000,Bachelor's,Houston,10000,640,Bronze,2,2,250,2,Medium,Monthly,Monthly,2023-10-14,3.5,Yes,Yes
+C005,Michael,Brown,Male,50,Married,Construction Manager,95000,High School,Miami,25000,780,Gold,15,4,1000,0,High,Weekly,Daily,2023-10-11,4.8,No,No
+C006,Emily,Jones,Female,22,Single,Student,20000,Associate's,San Francisco,5000,600,Bronze,1,1,150,1,Low,Monthly,Weekly,2023-10-09,3.0,Yes,Yes
+C007,David,Miller,Male,37,Married,Sales Executive,70000,Bachelor's,Seattle,15000,710,Silver,6,3,600,0,Medium,Weekly,Daily,2023-10-13,4.2,Yes,No
+C008,Susan,Davis,Female,45,Widowed,Teacher,48000,Master's,Atlanta,8000,650,Bronze,4,2,200,3,Low,Monthly,Monthly,2023-10-07,3.7,Yes,Yes
+C009,James,Garcia,Male,29,Single,Data Analyst,62000,Bachelor's,San Diego,11000,670,Silver,3,2,350,0,Medium,Monthly,Weekly,2023-10-08,4.1,No,No
+C010,Linda,Martinez,Female,38,Married,Nurse,72000,Bachelor's,Dallas,13000,690,Gold,5,3,450,1,Medium,Weekly,Daily,2023-10-06,4.4,Yes,No
+1001,John,Doe,Male,34,Married,Software Engineer,85000,Bachelor's,San Francisco,15000,720,Gold,5,2,800,0,High,Weekly,Daily,2023-10-01,4.5,Yes,No
+1002,Jane,Smith,Female,29,Single,Marketing Manager,65000,Master's,New York,10000,680,Silver,3,1,500,1,Medium,Monthly,Weekly,2023-09-28,4.0,No,No
+1003,Michael,Brown,Male,42,Married,Accountant,90000,Bachelor's,Chicago,20000,750,Platinum,10,3,1200,0,High,Weekly,Daily,2023-10-02,5.0,Yes,No
+1004,Emily,Jones,Female,25,Single,Graphic Designer,55000,Bachelor's,Los Angeles,8000,640,Bronze,2,1,300,2,Low,Monthly,Monthly,2023-09-30,3.5,No,Yes
+1005,David,Johnson,Male,38,Married,Project Manager,78000,Master's,Houston,12000,710,Gold,7,2,700,0,Medium,Weekly,Daily,2023-09-29,4.2,Yes,No
+1006,Sarah,Wilson,Female,31,Single,Data Analyst,67000,Bachelor's,Seattle,9000,690,Silver,4,1,450,1,Medium,Monthly,Weekly,2023-09-27,4.1,No,No
+1007,James,Garcia,Male,45,Married,Sales Director,95000,Master's,Miami,25000,780,Platinum,12,4,1500,0,High,Weekly,Daily,2023-09-25,4.8,Yes,No
+1008,Ashley,Martinez,Female,27,Single,Web Developer,62000,Bachelor's,Atlanta,8500,675,Bronze,3,2,400,1,Medium,Monthly,Weekly,2023-09-26,3.8,No,Yes
+1009,Robert,Lopez,Male,50,Married,Operations Manager,105000,Master's,Philadelphia,30000,800,Gold,15,5,1600,0,High,Weekly,Daily,2023-10-03,4.7,Yes,No
+1010,Karen,Gonzalez,Female,36,Divorced,Teacher,58000,Bachelor's,Phoenix,7000,660,Silver,6,1,350,3,Low,Monthly,Monthly,2023-09-24,3.9,No,Yes
+1001,John,Doe,Male,35,Married,Software Engineer,75000,Bachelor's,New York,15000,720,Gold,5,2,800,1,High,Weekly,Daily,2023-10-15,4.5,Yes,No
+1002,Jane,Smith,Female,28,Single,Marketing Specialist,60000,Master's,Los Angeles,12000,680,Silver,3,1,600,0,Medium,Monthly,Weekly,2023-10-10,4.0,No,No
+1003,Michael,Brown,Male,42,Divorced,Financial Analyst,95000,Bachelor's,Chicago,20000,750,Platinum,10,3,1000,2,High,Weekly,Daily,2023-10-12,4.8,Yes,Yes
+1004,Emily,Jones,Female,30,Single,Graphic Designer,55000,Bachelor's,Houston,10000,650,Basic,2,1,400,0,Medium,Monthly,Monthly,2023-10-14,3.5,No,No
+1005,David,Williams,Male,50,Married,Project Manager,120000,Master's,Phoenix,25000,800,Platinum,15,4,1200,0,High,Weekly,Daily,2023-10-13,5.0,Yes,No
+1006,Sarah,Garcia,Female,38,Married,Teacher,45000,Bachelor's,Philadelphia,8000,600,Silver,4,2,500,1,Medium,Monthly,Weekly,2023-10-11,4.2,No,No
+1007,James,Martinez,Male,29,Single,Data Scientist,70000,Master's,San Antonio,16000,720,Gold,6,2,900,0,High,Weekly,Daily,2023-10-09,4.6,Yes,Yes
+1008,Jessica,Hernandez,Female,45,Married,Nurse,85000,Bachelor's,Dallas,18000,740,Gold,8,3,1100,0,High,Weekly,Daily,2023-10-08,4.7,Yes,No
+1009,William,Lee,Male,55,Divorced,Consultant,130000,Master's,San Diego,30000,780,Platinum,12,5,1500,1,High,Weekly,Daily,2023-10-07,4.9,Yes,Yes
+1010,Ashley,Lopez,Female,33,Single,HR Manager,62000,Bachelor's,San Jose,9000,670,Silver,3,1,450,0,Medium,Monthly,Weekly,2023-10-06,3.8,No,No
+1001,John,Doe,Male,34,Married,Software Engineer,75000,Bachelor's,New York,15000,720,Rewards,5,2,800,0,High,Weekly,Yes,2023-10-05,9,Lifetime,No
+1002,Jane,Smith,Female,28,Single,Marketing Specialist,60000,Master's,Los Angeles,12000,680,Cashback,3,1,500,1,Medium,Monthly,Yes,2023-09-30,8,Standard,No
+1003,Emily,Jones,Female,45,Married,Accountant,85000,Bachelor's,Chicago,20000,750,Travel,10,3,1000,0,High,Daily,Yes,2023-10-02,10,Lifetime,No
+1004,Michael,Brown,Male,52,Divorced,Project Manager,95000,Master's,Houston,25000,800,Premium,7,4,1200,2,High,Weekly,Yes,2023-10-01,7,Elite,Yes
+1005,Jessica,Johnson,Female,30,Single,Graphic Designer,55000,Bachelor's,San Francisco,10000,675,Standard,2,1,300,0,Low,Monthly,No,2023-10-03,6,Standard,No
+1006,David,Williams,Male,40,Married,Sales Executive,70000,Bachelor's,Miami,18000,710,Cashback,8,2,900,1,Medium,Weekly,Yes,2023-09-28,8,Lifetime,No
+1007,Sarah,Brown,Female,37,Married,Teacher,50000,Bachelor's,Seattle,9000,650,Standard,4,1,350,1,Low,Monthly,No,2023-10-04,5,Standard,No
+1008,Chris,Davis,Male,29,Single,Web Developer,62000,Bachelor's,Boston,15000,690,Rewards,3,2,600,0,Medium,Weekly,Yes,2023-10-06,7,Standard,No
+1009,Ashley,Miller,Female,42,Married,HR Manager,80000,Master's,Atlanta,22000,740,Travel,6,3,1100,1,High,Monthly,Yes,2023-09-27,9,Lifetime,No
+1010,Matthew,Wilson,Male,36,Single,Data Analyst,65000,Bachelor's,Denver,16000,705,Cashback,2,1,400,0,Medium,Monthly,Yes,2023-10-05,8,Standard,No
+1001,Emily,Johnson,Female,34,Married,Marketing Manager,75000,Bachelor's,New York,15000,720,Gold,5,2,800,0,High,Weekly,Yes,2023-10-10,4.5,Yes,No
+1002,Michael,Smith,Male,28,Single,Software Engineer,95000,Master's,San Francisco,20000,750,Platinum,3,1,1200,1,Medium,Monthly,Yes,2023-10-05,4.8,Yes,No
+1003,Sarah,Brown,Female,45,Divorced,Teacher,60000,Bachelor's,Chicago,12000,680,Silver,10,3,600,2,Low,Monthly,No,2023-10-08,3.9,No,Yes
+1004,David,Williams,Male,50,Married,Accountant,80000,Master's,Los Angeles,18000,700,Gold,15,4,1000,0,Medium,Weekly,Yes,2023-10-09,4.2,Yes,No
+1005,Jessica,Jones,Female,30,Single,Graphic Designer,70000,Bachelor's,Austin,16000,740,Gold,2,2,700,0,High,Weekly,Yes,2023-09-30,4.7,No,No
+1006,James,Garcia,Male,38,Married,Sales Manager,90000,Master's,Miami,22000,780,Platinum,8,3,1500,0,High,Monthly,Yes,2023-10-11,4.6,Yes,No
+1007,Patricia,Miller,Female,29,Single,Data Analyst,65000,Bachelor's,Seattle,14000,690,Silver,4,1,500,1,Medium,Weekly,No,2023-10-07,4.0,No,Yes
+1008,Robert,Davis,Male,41,Married,Project Manager,85000,Master's,Boston,20000,710,Gold,7,2,1100,0,Medium,Monthly,Yes,2023-10-03,4.3,Yes,No
+1009,Elizabeth,Martinez,Female,37,Divorced,HR Specialist,55000,Bachelor's,Denver,13000,670,Silver,12,3,400,3,Low,Monthly,No,2023-10-02,3.8,No,Yes
+1010,William,Hernandez,Male,33,Married,Web Developer,92000,Master's,Portland,24000,760,Platinum,6,2,1300,0,High,Weekly,Yes,2023-10-12,4.9,Yes,No
+1001,John,Doe,Male,35,Married,Software Engineer,80000,Bachelor's,New York,15000,720,Standard,5,2,1200,1,Moderate,Weekly,Daily,2023-10-15,4.5,Yes,No
+1002,Jane,Smith,Female,28,Single,Marketing Specialist,60000,Master's,Los Angeles,10000,680,Gold,3,1,800,0,High,Daily,Weekly,2023-10-12,4.0,Yes,No
+1003,Michael,Brown,Male,45,Divorced,Accountant,95000,Bachelor's,Chicago,20000,740,Platinum,10,3,1500,2,Low,Monthly,Monthly,2023-10-10,3.5,No,Yes
+1004,Emily,Jones,Female,32,Married,Graphic Designer,70000,Bachelor's,Houston,12000,700,Standard,4,2,1000,0,Moderate,Weekly,Daily,2023-10-14,4.8,Yes,No
+1005,David,Williams,Male,50,Widowed,Project Manager,85000,Master's,Phoenix,18000,760,Gold,8,4,1300,1,High,Daily,Weekly,2023-10-11,4.2,Yes,Yes
+1006,Sarah,Miller,Female,26,Single,Data Analyst,55000,Bachelor's,San Antonio,9000,650,Standard,2,1,600,0,Moderate,Monthly,Daily,2023-10-09,4.0,No,No
+1007,James,Davis,Male,38,Married,Sales Manager,100000,Master's,Philadelphia,25000,780,Platinum,6,3,2000,1,High,Weekly,Daily,2023-10-13,4.9,Yes,No
+1008,Amy,Garcia,Female,30,Single,Web Developer,65000,Bachelor's,San Diego,11000,690,Standard,3,2,950,0,Moderate,Weekly,Weekly,2023-10-08,4.1,Yes,No
+1009,William,Martinez,Male,42,Married,Operations Manager,90000,Master's,Dallas,16000,730,Gold,5,2,1400,2,Low,Monthly,Monthly,2023-10-10,3.8,Yes,Yes
+1010,Linda,Hernandez,Female,29,Single,HR Specialist,62000,Bachelor's,San Jose,9500,670,Standard,2,1,700,0,Moderate,Daily,Daily,2023-10-07,4.3,No,No
+1001,John,Doe,Male,35,Married,Software Engineer,75000,Bachelor's,New York,15000,720,Gold,5,2,800,0,High,Weekly,Yes,2023-10-01,4.5,Yes,No
+1002,Jane,Smith,Female,28,Single,Marketing Specialist,60000,Master's,Los Angeles,12000,680,Silver,3,1,500,1,Medium,Monthly,Yes,2023-09-28,4.0,No,No
+1003,Michael,Brown,Male,42,Married,Project Manager,90000,Bachelor's,Chicago,20000,750,Platinum,10,3,1200,0,High,Daily,Yes,2023-10-02,4.8,Yes,No
+1004,Emily,Jones,Female,30,Single,Graphic Designer,55000,Bachelor's,Seattle,10000,650,Bronze,2,1,300,2,Low,Weekly,No,2023-09-30,3.5,No,Yes
+1005,David,Garcia,Male,50,Married,Accountant,85000,Master's,Houston,18000,700,Gold,8,2,900,0,Medium,Monthly,Yes,2023-10-03,4.2,Yes,No
+1006,Sarah,Martinez,Female,26,Single,Data Analyst,62000,Bachelor's,Miami,11000,670,Silver,4,2,400,1,Low,Weekly,Yes,2023-09-29,3.8,No,No
+1007,James,Wilson,Male,38,Divorced,Sales Manager,72000,Bachelor's,Atlanta,16000,710,Gold,6,2,700,0,Medium,Monthly,Yes,2023-10-01,4.1,Yes,No
+1008,Ashley,Thompson,Female,29,Married,Teacher,48000,Bachelor's,San Francisco,9000,640,Bronze,1,1,250,3,Low,Monthly,No,2023-09-25,3.0,No,Yes
+1009,Robert,Anderson,Male,45,Married,Engineer,95000,Master's,Boston,22000,740,Platinum,12,3,1300,0,High,Daily,Yes,2023-10-04,4.6,Yes,No
+1010,Jessica,Lee,Female,33,Single,HR Specialist,57000,Bachelor's,Denver,13000,690,Silver,5,1,600,1,Medium,Weekly,Yes,2023-09-27,4.0,No,No
