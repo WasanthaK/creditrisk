@@ -1,4 +1,5 @@
 import os
+import requests
 import json
 from openai import AzureOpenAI
 from dotenv import load_dotenv
@@ -7,18 +8,19 @@ from langchain_community.retrievers.azure_ai_search import AzureAISearchRetrieve
 from langchain_openai import ChatOpenAI
 from azure.ai.inference import ChatCompletionsClient
 from azure.core.credentials import AzureKeyCredential
+import streamlit as st
 
 # Load environment variables
-load_dotenv(override=True)
+#load_dotenv(override=True)
 
 # Set up Azure Cognitive Search and OpenAI details
-AZURE_SEARCH_SERVICE = os.getenv("AZURE_SEARCH_SERVICE")
-AZURE_SEARCH_INDEX = os.getenv("AZURE_SEARCH_INDEX")
-AZURE_SEARCH_API_KEY = os.getenv("AZURE_SEARCH_API_KEY")
-AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
-AZURE_OPENAI_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION")
-AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
-api_key = os.getenv("AZURE_INFERENCE_CREDENTIAL")
+AZURE_SEARCH_SERVICE = st.secrets["AZURE_SEARCH_SERVICE"]
+AZURE_SEARCH_INDEX = st.secrets["AZURE_SEARCH_INDEX"]
+AZURE_SEARCH_API_KEY = st.secrets["AZURE_SEARCH_API_KEY"]
+AZURE_OPENAI_API_KEY = st.secrets["AZURE_OPENAI_API_KEY"]
+AZURE_OPENAI_API_VERSION = st.secrets["AZURE_OPENAI_API_VERSION"]
+AZURE_OPENAI_ENDPOINT = st.secrets["AZURE_OPENAI_ENDPOINT"]
+api_key = st.secrets["AZURE_INFERENCE_CREDENTIAL"]
 
 # Set up LangChain embedding and Azure Search connection using AzureOpenAIEmbeddings
 print("[DEBUG] Setting up AzureOpenAIEmbeddings...")
@@ -28,6 +30,17 @@ embeddings = AzureOpenAIEmbeddings(
     azure_openai_api_version=AZURE_OPENAI_API_VERSION
 )
 print("[DEBUG] AzureOpenAIEmbeddings setup complete.")
+
+# Define the Azure Cognitive Search endpoint
+api_version = "2021-04-30-Preview"
+search_url = f"https://{AZURE_SEARCH_SERVICE}.search.windows.net/indexes/{AZURE_SEARCH_INDEX}/docs/search?api-version={api_version}"
+count_url = f"https://{AZURE_SEARCH_SERVICE}.search.windows.net/indexes/{AZURE_SEARCH_INDEX}/docs/$count?api-version={api_version}"
+headers = {
+    "Content-Type": "application/json",
+    "api-key": AZURE_SEARCH_API_KEY
+}
+
+
 
 # Configure Azure AI Search retriever
 print("[DEBUG] Configuring Azure AI Search retriever...")
@@ -60,7 +73,18 @@ def search_similar_profiles(customer_description):
 # Streamlit UI setup
 import streamlit as st
 
-st.title("Customer Insights and Analysis with LangChain")
+st.title("Customer Insights and Analysis with Enadoc Azure AI")
+
+# Display number of vectors in the store
+try:
+    count_response = requests.get(count_url, headers=headers)
+    if count_response.status_code == 200:
+        vector_count = count_response.text
+        st.write(f"Total number of vectors in the store: {vector_count}")
+    else:
+        st.error(f"Failed to retrieve vector count: {count_response.status_code} - {count_response.text}")
+except Exception as e:
+    st.error(f"An error occurred while retrieving vector count: {str(e)}")
 
 # User inputs for analysis
 gender = st.selectbox("Gender", ("Male", "Female", "Other"), index=0)
@@ -114,7 +138,7 @@ if st.button("Create Credit Score and Risk Assessment"):
             st.header("Credit Score and Risk Assessment")
             
             client = ChatCompletionsClient(
-                endpoint='https://Phi-3-5-vision-instruct-vmdvw.southcentralus.models.ai.azure.com',
+                endpoint='https://Phi-3-5-vision-instruct-aohdz.southcentralus.models.ai.azure.com',
                 credential=AzureKeyCredential(api_key))
 
             model_info = client.get_model_info()
@@ -123,16 +147,16 @@ if st.button("Create Credit Score and Risk Assessment"):
             print("Model provider name:", model_info.model_provider_name)
 
             payload = {
-            "messages": [
-                {
-                    "role": "assistant",
-                    "content": "please analyse the following data and provide and generate a credit score and risk assessment, first row represent new customer and the rest are existing customers with more data such as late payment, credit score type of card etc., we need to generate the credit risk assesment for the first (new) customer"
-                },
-                {
-                "role": "user",
-                "content": "{combined_description}"
-                }
-            ],
+                "messages": [
+                    {
+                        "role": "assistant",
+                        "content": "You are an AI assistant that helps create credit scores and risk analysis for new customers requesting credit cards. You will always be provided with a dataset where the first record will contain the new customer information and 5 similar customers from our database. Based on their performance, you need to predict the credit scores and risk profiles."
+                    },
+                    {
+                        "role": "user",
+                        "content": "Analyze this: {combined_description} \nPlease give me prediction as key-value pairs for Credit Score, Credit Risk, and Comments."
+                    }
+                ],
             "max_tokens": 2048,
             "temperature": 0.8,
             "top_p": 0.1,
@@ -140,6 +164,7 @@ if st.button("Create Credit Score and Risk Assessment"):
             "frequency_penalty": 0
             }
             response = client.complete(payload).choices[0].message.content
+            print("response:",payload)
             st.write(response)
         else:
             st.error("Please search for similar profiles first.")
