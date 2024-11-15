@@ -109,15 +109,14 @@ if st.button("Search Similar Profiles"):
             "Education Level": education_level
         }
         print(f"[DEBUG] Customer info: {customer_info}")
-        similar_profiles = search_similar_profiles(json.dumps(customer_info))
-        if similar_profiles:
-            st.session_state.similar_profiles = similar_profiles
+        if (similar := search_similar_profiles(json.dumps(customer_info))):
+            st.session_state.similar_profiles = similar
             st.header("Similar Customer Profiles")
-            for profile in similar_profiles:
+            for profile in similar:
                 st.write(profile.page_content)
     except Exception as e:
         st.error(f"An error occurred: {str(e)}")
-        print(f"[ERROR] {str(e)}")
+    print(f"[ERROR] {str(e)}")
 
 # Button to create credit score and risk assessment
 if st.button("Create Credit Score and Risk Assessment"):
