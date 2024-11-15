@@ -116,7 +116,7 @@ if st.button("Search Similar Profiles"):
                 st.write(profile.page_content)
     except Exception as e:
         st.error(f"An error occurred: {str(e)}")
-    print(f"[ERROR] {str(e)}")
+        print(f"[ERROR] {str(e)}")
 
 # Button to create credit score and risk assessment
 if st.button("Create Credit Score and Risk Assessment"):
