@@ -181,4 +181,4 @@ if st.button("Create Credit Score and Risk Assessment"):
             st.error("Please search for similar profiles first.")
     except Exception as e:
         st.error(f"An error occurred: {str(e)}")
-
+        print(f"[ERROR] {str(e)}")
