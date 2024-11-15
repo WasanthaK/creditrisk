@@ -114,6 +114,7 @@ panda==0.3.1
 pandas==2.2.3
 parso==0.8.4
 pillow==11.0.0
+pip>=23.0
 platformdirs==4.3.6
 portalocker==2.10.1
 posthog==3.7.0
